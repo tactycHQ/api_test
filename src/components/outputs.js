@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Panel from "./panel";
 
 class Outputs extends Component {
   constructor(props) {
@@ -50,7 +51,8 @@ class Outputs extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>Refresh</button>
+        <Panel refresh = {this.handleClick}/>
+        {/*<button onClick={this.handleClick}>Refresh</button>*/}
         <div>{this.state.result}</div>
       </div>
     );
